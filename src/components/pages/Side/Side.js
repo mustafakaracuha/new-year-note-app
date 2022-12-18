@@ -38,10 +38,10 @@ export default function Home() {
     };
     try {
       await addDoc(collection(db, "notes"), noteData);
-      toast.success("Notunu ekledim 😊")
+      toast.success("Notunu ekledim")
       dispatch(selectAndCreateNote(noteData));
     } catch (e) {
-      toast.error("Üzgünüm notunu ekleyemedim 😞")
+      toast.error("Üzgünüm notunu ekleyemedim")
     }
   };
 

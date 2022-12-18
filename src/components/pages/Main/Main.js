@@ -30,7 +30,7 @@ import {
 } from "firebase/firestore";
 
 export default function Main() {
-  const [head, setHead] = useState("Yeni yıla not 🎉");
+  const [head, setHead] = useState(`Yeni yıla not`);
   const [text, setLoadingText] = useState("Notunu Oluştur");
   const { note } = useSelector((state) => state.note);
   const dispatch = useDispatch();
@@ -39,7 +39,6 @@ export default function Main() {
   useEffect(() => {
     checkAllNotes();
   }, []);
-
   
 
   const handleDisabledButton = (item) => {
@@ -77,10 +76,10 @@ export default function Main() {
       };
       updateDoc(doc(db, "notes", docs.id), data)
         .then(() => {
-          toast.success("Notunu kaydettim 😊");
+          toast.success("Notunu kaydettim");
         })
         .catch((error) => {
-          console.log(error);
+          toast.error("Notunu kaydedemiyorum");
         });
     });
     handleDisabledButton(item);
