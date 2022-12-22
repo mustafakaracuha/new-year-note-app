@@ -17,9 +17,6 @@
 🔗 git clone https://github.com/mustafakaracuha/new-year-note-app/
 <br/>
 <br/>
-⚡️  npm install <br/>
-⚡️  npm start <br/>
-💥 enjoy 🌋
 
 ### Screenshot
 
