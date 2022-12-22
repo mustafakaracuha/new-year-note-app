@@ -20,4 +20,4 @@
 
 ### Screenshot
 
-<img align="center" width="900" width="900"  src="https://github.com/mustafakaracuha/pharmacy-dashboard-demo/blob/main/src/assets/screenshots/app.gif" alt="muskaracuha" />
+<img align="center" width="900" width="900"  src="https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/app.gif" alt="muskaracuha" />
