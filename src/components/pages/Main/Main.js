@@ -7,11 +7,11 @@ import { MdEdit, MdSave } from "react-icons/md";
 import { toast } from "react-hot-toast";
 
 // Background image
-import Search from "../Search/Search";
 import socks from "../../../assets/images/socks.png";
 import christmasTree from "../../../assets/images/christmasTree.png";
 
-
+// Search component
+import Search from "../Search/Search";
 
 // Redux
 import {
@@ -101,11 +101,11 @@ export default function Main() {
       <Search />
       <img
         src={socks}
-        className="absolute -top-3 bg-cover w-[250px] right-5 animate-wiggle"
+        className="absolute -top-3 bg-cover w-[250px] right-14 animate-wiggle opacity-50 -z-50"
       />
       <img
         src={christmasTree}
-        className="absolute -bottom-0 bg-cover w-[400px] -right-5"
+        className="absolute -bottom-0 bg-cover w-[400px] -right-5 opacity-20"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
