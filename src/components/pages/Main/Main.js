@@ -9,6 +9,8 @@ import { toast } from "react-hot-toast";
 // Background image
 import Search from "../Search/Search";
 import socks from "../../../assets/images/socks.png";
+import christmasTree from "../../../assets/images/christmasTree.png";
+
 
 
 // Redux
@@ -99,7 +101,11 @@ export default function Main() {
       <Search />
       <img
         src={socks}
-        className="absolute -top-3 bg-cover w-[300px] -right-0 opacity-20 animate-wiggle"
+        className="absolute -top-3 bg-cover w-[250px] right-5 animate-wiggle"
+      />
+      <img
+        src={christmasTree}
+        className="absolute -bottom-0 bg-cover w-[400px] -right-5"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
