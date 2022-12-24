@@ -97,41 +97,41 @@ export default function Main() {
   };
 
   return (
-    <div className="flex-1 w-full h-screen overflow-hidden">
+    <div className="flex-1 w-full h-screen">
       <Search />
       <img
         src={socks}
-        className="absolute -top-3 bg-cover w-[250px] right-14 animate-wiggle opacity-50 -z-50"
+        className="max-sm:hidden max-md:hidden absolute -top-3 bg-cover w-[250px] right-14 animate-wiggle opacity-50 -z-50"
       />
       <img
         src={christmasTree}
-        className="absolute -bottom-0 bg-cover w-[400px] -right-5 opacity-20"
+        className="max-sm:hidden max-md:hidden absolute -bottom-0 bg-cover w-[400px] right-0 opacity-20"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
-          <h1 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins flex mb-14">
+          <h1 className="max-sm:text-3xl max-sm:mt-10 max-sm:ml-7  max-md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins flex mb-14">
             {head}
           </h1>
           {note.length > 0 && (
-            <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-poppins flex mt-3 md:mr-20 lg:mr-14 xl:mr-16 2xl:mr-8">
+            <h1 className="max-sm:text-2xl max-md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-poppins flex max-sm:mt-11 max-sm:mr-8 mt-3 md:mr-20 lg:mr-14 xl:mr-16 2xl:mr-8">
               {note.length}
             </h1>
           )}
         </div>
-        <div className="w-full md:max-h-[300px] lg:max-h-[350px] xl:max-h-[540px] 2xl:max-h-[660px] grid gap-y-10 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 xl:pb-24 2xl:pb-16 sm:overflow-auto">
+        <div className="w-full max-sm:max-h-[540px] md:max-h-[300px] lg:max-h-[350px] xl:max-h-[540px] 2xl:max-h-[650px] grid gap-y-10 gap-5 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 xl:pb-24 2xl:pb-16 max-sm:overflow-auto overflow-auto">
           {note.length > 0 ? (
             note.map((item, index) => (
               <div
                 key={index}
                 style={{ backgroundColor: `${item.color}` }}
-                className={`w-60 h-60 rounded-[15px] group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
               >
                 <textarea
                   disabled={item.disabled}
                   ref={inputRef}
-                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent font-poppins placeholder:text-gray-500 text-black resize-none"
+                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent font-poppins text-black placeholder:text-gray-400 resize-none"
                   placeholder="Notunu yaz"
-                  value={item?.descriptions}
+                  value={item?.descriptions} 
                   onChange={(e) => handleWriteNote(e, item, index)}
                 />
                 <div className="w-full h-14 bottom-0 flex items-end justify-between">
@@ -162,7 +162,7 @@ export default function Main() {
             ))
           ) : (
             <div className="w-screen">
-              <p className="text-4xl font-poppins text-gray-300">{text}</p>
+              <p className="max-sm:text-2xl max-sm:ml-7 text-4xl font-poppins text-gray-300">{text}</p>
             </div>
           )}
         </div>

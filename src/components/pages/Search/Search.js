@@ -5,7 +5,7 @@ export default function Search() {
 
   return (
     <div>
-      <div className="flex mt-8 ml-16 items-center">
+      <div className="max-sm:hidden flex mt-8 ml-16 items-center">
         <BiSearch className="text-[1.4em] text-gray-400" />
         <input
           disabled

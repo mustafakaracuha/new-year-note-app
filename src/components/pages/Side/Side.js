@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-32 h-screen border-r border-gray-200 pt-8 text-center">
+    <div className="w-[80px] h-screen border-r border-gray-200 pt-8 text-center">
       <button onClick={handleNoteViewColor}>
         <AiFillPlusCircle className="text-[3em] transition ease-in-out duration-300 active:scale-110" />
       </button>
@@ -54,23 +54,23 @@ export default function Home() {
         <>
           <RxDotFilled
             onClick={() => selectAndCreateColorNote("#f7d188")}
-            className="text-[4em] ml-8 transition text-[#f7d188] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#f7d188] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
             onClick={() => selectAndCreateColorNote("#f2aa85")}
-            className="text-[4em] ml-8 transition text-[#f2aa85] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#f2aa85] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
             onClick={() => selectAndCreateColorNote("#b99ef9")}
-            className="text-[4em] ml-8 transition text-[#b99ef9] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#b99ef9] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
             onClick={() => selectAndCreateColorNote("#62d6fa")}
-            className="text-[4em] ml-8 transition text-[#62d6fa] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#62d6fa] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
             onClick={() => selectAndCreateColorNote("#e9f1a4")}
-            className="text-[4em] ml-8 transition text-[#e9f1a4] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#e9f1a4] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
         </>
       )}
