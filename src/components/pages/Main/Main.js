@@ -101,7 +101,7 @@ export default function Main() {
       <Search />
       <img
         src={socks}
-        className="max-sm:hidden max-md:hidden absolute -top-3 bg-cover w-[250px] right-14 animate-wiggle opacity-50 -z-50"
+        className="max-sm:hidden max-md:hidden absolute -top-3 bg-cover w-[200px] right-20 animate-wiggle opacity-50 -z-50"
       />
       <img
         src={christmasTree}
