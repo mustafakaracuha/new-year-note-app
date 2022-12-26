@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
+        'petit': ['Petit Formal Script', 'sans-serif'],
       },
       animation: {
         wiggle: 'wiggle 3s ease-in-out infinite'

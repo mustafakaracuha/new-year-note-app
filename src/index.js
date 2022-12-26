@@ -6,7 +6,6 @@ import App from "./App";
 import { Toaster } from 'react-hot-toast';
 import SnowStorm from 'react-snowstorm';  
 import 'moment/locale/tr' 
-
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

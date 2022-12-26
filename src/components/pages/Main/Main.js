@@ -7,8 +7,9 @@ import { MdEdit, MdSave } from "react-icons/md";
 import { toast } from "react-hot-toast";
 
 // Background image
-import socks from "../../../assets/images/socks.png";
-import christmasTree from "../../../assets/images/christmasTree.png";
+import christmas from "../../../assets/images/top.svg";
+import year from "../../../assets/images/bottom.svg";
+
 
 // Search component
 import Search from "../Search/Search";
@@ -41,6 +42,8 @@ export default function Main() {
   useEffect(() => {
     checkAllNotes();
   }, []);
+
+
   
 
   const handleDisabledButton = (item) => {
@@ -100,16 +103,16 @@ export default function Main() {
     <div className="flex-1 w-full h-screen">
       <Search />
       <img
-        src={socks}
-        className="max-sm:hidden max-md:hidden absolute -top-3 bg-cover w-[200px] right-20 animate-wiggle opacity-50 -z-50"
+        src={christmas}
+        className="max-sm:hidden absolute -top-3 bg-cover w-[300px] right-20 opacity-100 z-100"
       />
       <img
-        src={christmasTree}
-        className="max-sm:hidden max-md:hidden absolute -bottom-0 bg-cover w-[400px] right-0 opacity-20"
+        src={year}
+        className="max-sm:hidden max-md:hidden lg:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
-          <h1 className="max-sm:mt-10 max-sm:ml-7 max-sm:text-3xl  max-md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins flex mb-14">
+          <h1 className="max-sm:mt-10 max-sm:ml-7 max-sm:text-3xl  max-md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins font-light flex mb-14">
             {head}
           </h1>
           {note.length > 0 && (
@@ -124,7 +127,7 @@ export default function Main() {
               <div
                 key={index}
                 style={{ backgroundColor: `${item.color}` }}
-                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer deneme`}
               >
                 <textarea
                   disabled={item.disabled}
@@ -162,7 +165,7 @@ export default function Main() {
             ))
           ) : (
             <div className="w-screen">
-              <p className="max-sm:text-2xl max-sm:ml-7 text-4xl font-poppins text-gray-300">{text}</p>
+              <p className="max-sm:text-2xl max-sm:ml-7 ml-2 text-4xl font-poppins text-gray-300">{text}</p>
             </div>
           )}
         </div>
