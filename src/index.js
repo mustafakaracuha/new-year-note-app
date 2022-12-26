@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
       <Provider store={store}>
       <App />
-      <Toaster toastOptions={{duration: 3000, position: "top-right"}}/>
+      <Toaster toastOptions={{duration: 3000, position: "top-center"}}/>
       <SnowStorm snowColor="#bababa" excludeMobile={false}/>
       </Provider>,
 );

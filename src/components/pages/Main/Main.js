@@ -109,7 +109,7 @@ export default function Main() {
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
-          <h1 className="max-sm:text-3xl max-sm:mt-10 max-sm:ml-7  max-md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins flex mb-14">
+          <h1 className="max-sm:mt-10 max-sm:ml-7 max-sm:text-3xl  max-md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-6xl font-poppins flex mb-14">
             {head}
           </h1>
           {note.length > 0 && (
