@@ -74,9 +74,6 @@ export default function Home() {
           />
         </>
       )}
-      <div className="absolute">
-        
-      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import Side from "../Side/Side";
 import Main from "../Main/Main";
 

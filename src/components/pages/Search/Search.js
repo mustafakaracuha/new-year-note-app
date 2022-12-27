@@ -2,7 +2,6 @@ import React from "react";
 import { BiSearch } from "react-icons/bi";
 
 export default function Search() {
-
   return (
     <div>
       <div className="max-sm:hidden flex mt-8 ml-16 items-center">

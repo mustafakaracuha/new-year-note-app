@@ -35,6 +35,7 @@ import {
 export default function Main() {
   const [head, setHead] = useState(`Yeni yıla not`);
   const [text, setLoadingText] = useState("Notunu Oluştur");
+  
   const { note } = useSelector((state) => state.note);
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -43,8 +44,6 @@ export default function Main() {
     checkAllNotes();
   }, []);
 
-
-  
 
   const handleDisabledButton = (item) => {
     let updateNewNote = note.map((notes) => {
