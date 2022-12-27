@@ -20,4 +20,4 @@
 
 ### Screenshot
 
-<img align="center" width="600" width="600"  src="https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/app.gif" alt="muskaracuha" />
+<img align="center" width="600" width="600"  src="https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/gif/app.gif" alt="muskaracuha" />
