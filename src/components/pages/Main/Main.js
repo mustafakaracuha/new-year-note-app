@@ -9,6 +9,10 @@ import { toast } from "react-hot-toast";
 // Background image
 import christmas from "../../../assets/images/top.svg";
 import year from "../../../assets/images/bottom.svg";
+import nightBlueCard from "../../../assets/images/blue.svg";
+import yellowCard from "../../../assets/images/yellow.svg";
+import greenCard from "../../../assets/images/green.svg";
+import redCard from "../../../assets/images/red.svg";
 
 
 // Search component
@@ -35,7 +39,7 @@ import {
 export default function Main() {
   const [head, setHead] = useState(`Yeni yıla not`);
   const [text, setLoadingText] = useState("Notunu Oluştur");
-  
+
   const { note } = useSelector((state) => state.note);
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -107,7 +111,8 @@ export default function Main() {
       />
       <img
         src={year}
-        className="max-sm:hidden max-md:hidden lg:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100"
+        style={note.length >= 10 ? {opacity: "0.5"} : {opacity: "1"}}
+        className="max-sm:hidden max-md:hidden lg:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100 -z-50"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
@@ -125,38 +130,41 @@ export default function Main() {
             note.map((item, index) => (
               <div
                 key={index}
-                style={{ backgroundColor: `${item.color}` }}
-                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer deneme`}
-              >
+                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+              > 
+              <img
+              src={item.color === "red" ? redCard : item.color === "yellow" ? yellowCard : item.color === "blue" ? nightBlueCard : item.color === "green" ? greenCard : ""}
+              className="max-sm:hidden absolute top-0 bottom-0 left-0 w-auto right-0 -z-50"
+              />
                 <textarea
                   disabled={item.disabled}
                   ref={inputRef}
-                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent font-poppins text-black placeholder:text-gray-400 resize-none"
+                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent text-lg font-poppins font-normal text-white placeholder:text-white resize-none z-100"
                   placeholder="Notunu yaz"
                   value={item?.descriptions} 
                   onChange={(e) => handleWriteNote(e, item, index)}
                 />
                 <div className="w-full h-14 bottom-0 flex items-end justify-between">
-                  <p className="font-poppins p-5 text-xs font-ultralight text-black">
+                  <p className="font-poppins p-5 text-xs font-normal text-white z-50">
                     {moment(item.date).calendar()}
                     </p>
                   {item.disabled ? (
                     <button
-                      className="p-2 mb-3 mr-3 bg-black rounded-full group-hover/item:visible invisible transition duration-200 active:scale-110"
+                      className="p-2 mb-3 mr-3 bg-white rounded-full group-hover/item:visible invisible transition duration-200 active:scale-110 z-50"
                       onClick={() => {
                         handleDisabledButton(item);
                       }}
                     >
-                      <MdEdit className="text-[1em] text-white" />
+                      <MdEdit className="text-[1.2em] text-gray-600" />
                     </button>
                   ) : (
                     <button
-                      className="p-2 mb-3 mr-3 bg-black rounded-full group-hover/item:visible invisible transition duration-200 active:scale-110"
+                      className="p-2 mb-3 mr-3 bg-white rounded-full group-hover/item:visible invisible transition duration-200 active:scale-110 z-50"
                       onClick={() => {
                         handleUpdateNotes(item, index);
                       }}
                     >
-                      <MdSave className="text-[1em] text-white" />
+                      <MdSave className="text-[1.2em] text-gray-600" />
                     </button>
                   )}
                 </div>

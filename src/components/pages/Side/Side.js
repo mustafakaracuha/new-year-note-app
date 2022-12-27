@@ -53,24 +53,20 @@ export default function Home() {
       {isCreateNoteColor && (
         <>
           <RxDotFilled
-            onClick={() => selectAndCreateColorNote("#f7d188")}
-            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#f7d188] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            onClick={() => selectAndCreateColorNote("blue")}
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#0069AA] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
-            onClick={() => selectAndCreateColorNote("#f2aa85")}
-            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#f2aa85] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            onClick={() => selectAndCreateColorNote("green")}
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#056B22] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
-            onClick={() => selectAndCreateColorNote("#b99ef9")}
-            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#b99ef9] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            onClick={() => selectAndCreateColorNote("red")}
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#C63030] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
           <RxDotFilled
-            onClick={() => selectAndCreateColorNote("#62d6fa")}
-            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#62d6fa] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
-          />
-          <RxDotFilled
-            onClick={() => selectAndCreateColorNote("#e9f1a4")}
-            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#e9f1a4] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
+            onClick={() => selectAndCreateColorNote("yellow")}
+            className="text-[4em] max-sm:ml-2 ml-2 transition text-[#CC9600] ease-in-out duration-200 hover:scale-125 active:scale-110 cursor-pointer"
           />
         </>
       )}
