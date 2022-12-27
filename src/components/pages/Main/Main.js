@@ -7,12 +7,12 @@ import { MdEdit, MdSave } from "react-icons/md";
 import { toast } from "react-hot-toast";
 
 // Background image
-import christmas from "../../../assets/images/top.svg";
-import year from "../../../assets/images/bottom.svg";
-import nightBlueCard from "../../../assets/images/blue.svg";
-import yellowCard from "../../../assets/images/yellow.svg";
-import greenCard from "../../../assets/images/green.svg";
-import redCard from "../../../assets/images/red.svg";
+import christmas from "../../../assets/images/main/top.svg";
+import year from "../../../assets/images/main/bottom.svg";
+import nightBlueCard from "../../../assets/images/card/blue.svg";
+import yellowCard from "../../../assets/images/card/yellow.svg";
+import greenCard from "../../../assets/images/card/green.svg";
+import redCard from "../../../assets/images/card/red.svg";
 
 
 // Search component
@@ -107,12 +107,12 @@ export default function Main() {
       <Search />
       <img
         src={christmas}
-        className="max-sm:hidden absolute -top-3 bg-cover w-[300px] right-20 opacity-100 z-100"
-      />
+        className="max-sm:hidden sm:hidden md:hidden lg:hidden xl:block 2xl:block absolute -top-3 bg-cover w-[300px] right-20 opacity-100 z-100"
+      /> 
       <img
         src={year}
         style={note.length >= 10 ? {opacity: "0.5"} : {opacity: "1"}}
-        className="max-sm:hidden max-md:hidden lg:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100 -z-50"
+        className="max-sm:hidden sm:hidden md:hidden lg:hidden xl:block 2xl:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100 -z-50"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
         <div className="flex justify-between">
