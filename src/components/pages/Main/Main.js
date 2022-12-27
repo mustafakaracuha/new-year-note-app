@@ -130,11 +130,11 @@ export default function Main() {
             note.map((item, index) => (
               <div
                 key={index}
-                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer shadow-2xl hover:shadow-sm`}
               > 
               <img
               src={item.color === "red" ? redCard : item.color === "yellow" ? yellowCard : item.color === "blue" ? nightBlueCard : item.color === "green" ? greenCard : ""}
-              className="max-sm:hidden absolute top-0 bottom-0 left-0 w-auto right-0 -z-50"
+              className="absolute top-0 bottom-0 left-0 w-auto right-0 -z-50"
               />
                 <textarea
                   disabled={item.disabled}
