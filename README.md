@@ -7,6 +7,8 @@
 - 🚐 Tailwind CSS
 - 🎨 React Icons
 - 🗄 Firebase
+- 🌨️ React Snow Effect 
+- 🎄 Christmas Design
 
 ### Live
 
