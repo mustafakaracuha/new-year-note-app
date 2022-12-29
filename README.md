@@ -20,7 +20,7 @@ A minimal interface that allows us to leave notes.
 ## Install 
 
 ```bash 
-  git clone https://github.com/mustafakaracuha/new-year-note-app/
+   git clone https://github.com/mustafakaracuha/new-year-note-app/
 ```
 ```bash 
     cd new-year-note-app
