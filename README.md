@@ -32,6 +32,9 @@ https://new-year-note-app.vercel.app/
   
 ## Screenshot
 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Uygulama Ekran Görüntüsü](https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/screenshots/1.png)
+![Uygulama Ekran Görüntüsü](https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/screenshots/2.png)
+![Uygulama Ekran Görüntüsü](https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/screenshots/3.png)
+
 
   
