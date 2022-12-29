@@ -21,10 +21,18 @@ A minimal interface that allows us to leave notes.
 
 ```bash 
   git clone https://github.com/mustafakaracuha/new-year-note-app/
-  cd new-year-note-app
-  npm install new-year-note-app
-  npm start
 ```
+```bash 
+    cd new-year-note-app
+```
+```bash 
+    npm install new-year-note-app
+```
+```bash 
+    npm start
+```
+
+
     
 ## Live
 https://new-year-note-app.vercel.app/
