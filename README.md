@@ -40,7 +40,7 @@ https://new-year-note-app.vercel.app/
   
 ## Screenshot
 
-https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/screenshots/3.png
+![Uygulama Ekran Görüntüsü](https://github.com/mustafakaracuha/new-year-note-app/blob/master/src/assets/images/screenshots/3.png)
 
 
   
