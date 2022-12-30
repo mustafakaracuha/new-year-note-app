@@ -11,6 +11,8 @@ A minimal interface that allows us to leave the new year notes.
 - Tailwind CSS
 - React Icons
 - Firebase
+- React Hot Toast
+- Moment Js
 - React Snow Effect
 - Christmas Design
 
