@@ -19,7 +19,7 @@ A minimal interface that allows us to leave the new year notes.
 
 
   
-## Install 
+## Installation 
 
 ```bash 
     git clone https://github.com/mustafakaracuha/new-year-note-app/
