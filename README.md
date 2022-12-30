@@ -1,7 +1,7 @@
 
 # New Year Note App
 
-A minimal interface that allows us to leave notes.
+A minimal interface that allows us to leave the new year notes.
 
 
 ## Technologies and Libraries
@@ -11,13 +11,15 @@ A minimal interface that allows us to leave notes.
 - Tailwind CSS
 - React Icons
 - Firebase
+- React Hot Toast
+- Moment Js
 - React Snow Effect
 - Christmas Design
 
 
 
   
-## Install 
+## Installation 
 
 ```bash 
     git clone https://github.com/mustafakaracuha/new-year-note-app/
