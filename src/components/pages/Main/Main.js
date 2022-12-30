@@ -111,7 +111,7 @@ export default function Main() {
       /> 
       <img
         src={year}
-        style={note.length >= 10 ? {opacity: "0.5"} : {opacity: "1"}}
+        style={note.length >= 10 ? {opacity: "0.4"} : {opacity: "1"}}
         className="max-sm:hidden sm:hidden md:hidden lg:hidden xl:block 2xl:block absolute bottom-0 bg-cover w-[350px] right-5 opacity-100 -z-50"
       />
       <div className="w-full h-full sm:p-5 md:p-8 lg:p-10 xl:p-16">
