@@ -1,7 +1,7 @@
 
 # New Year Note App
 
-A minimal interface that allows us to leave notes.
+A minimal interface that allows us to leave the new year notes.
 
 
 ## Technologies and Libraries
