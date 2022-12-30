@@ -130,7 +130,7 @@ export default function Main() {
             note.map((item, index) => (
               <div
                 key={index}
-                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 max-sm:rounded-[15px] rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
               > 
               <img
               src={item.color === "red" ? redCard : item.color === "yellow" ? yellowCard : item.color === "blue" ? nightBlueCard : item.color === "green" ? greenCard : ""}
