@@ -120,7 +120,7 @@ export default function Main() {
             {head}
           </h1>
           {note.length > 0 && (
-            <h1 className="max-sm:text-2xl max-md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-poppins flex max-sm:mt-11 max-sm:mr-8 mt-3 md:mr-20 lg:mr-14 xl:mr-16 2xl:mr-8">
+            <h1 className="max-sm:text-2xl max-md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl font-poppins flex max-sm:mt-11 max-sm:mr-7 mt-3 md:mr-20 lg:mr-14 xl:mr-16 2xl:mr-8">
               {note.length}
             </h1>
           )}
@@ -130,7 +130,7 @@ export default function Main() {
             note.map((item, index) => (
               <div
                 key={index}
-                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 max-sm:ml-7 group/item rounded-[15px] overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
               > 
               <img
               src={item.color === "red" ? redCard : item.color === "yellow" ? yellowCard : item.color === "blue" ? nightBlueCard : item.color === "green" ? greenCard : ""}
