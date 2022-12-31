@@ -130,7 +130,7 @@ export default function Main() {
             note.map((item, index) => (
               <div
                 key={index}
-                className={`max-sm:w-64 w-60 h-60 max-sm:rounded-[15px] rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
+                className={`max-sm:w-64 w-60 h-60 rounded-[15px] max-sm:ml-7 group/item overflow-hidden relative transition-all duration-200 hover:cursor-pointer`}
               > 
               <img
               src={item.color === "red" ? redCard : item.color === "yellow" ? yellowCard : item.color === "blue" ? nightBlueCard : item.color === "green" ? greenCard : ""}
@@ -139,7 +139,7 @@ export default function Main() {
                 <textarea
                   disabled={item.disabled}
                   ref={inputRef}
-                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent text-lg font-poppins font-normal text-white placeholder:text-white resize-none z-100"
+                  className="w-52 h-40 pl-5 pr-5 pt-5 mt-5 pb-5 outline-none border-none bg-transparent text-lg font-poppins font-normal text-white max-sm:placeholder:text-white placeholder:text-white resize-none z-100"
                   placeholder="Notunu yaz"
                   value={item?.descriptions} 
                   onChange={(e) => handleWriteNote(e, item, index)}
